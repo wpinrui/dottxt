@@ -1,0 +1,41 @@
+dot-txt
+
+Local device storage for stories
+Home
+	Display a horizontally scrollable list of books
+		This component should be able to take a specified number of rows
+	Display a search icon at the top
+Navbar
+	This should show home, page, bookmarks and settings
+
+Search (Icon on home)
+	Display a search input field (live)
+	Shows a vertically scrollable list
+		Each item should show a small cover, title, author
+		Expandable to show a description
+
+Bookmarks
+	For the currently selected book, display a vertically scrollable list
+		The list should be sorted by most recently added
+		Read from the <book>.json
+		On click, pan the book to that bookmark
+
+Page
+	Always displays the current page number.
+	When tapped, a little card pops up, allowing jumping between pages.
+	For now, pages will be virtual (just divide by line number).
+	Add a bookmark button, which opens a dialog that asks for a name (defaults to page#) with OK and cancel.
+	Keep and undo and redo button.
+
+Reader
+	Loads the book text and the json.
+	Takes params according to the setting.
+	Pans to the page indicated in the json.
+	When a new page is reached, update the json.
+
+Settings
+	Opens a card in the reader page.
+	Allows user to increase or decrease the font size, immediate save to settings.json
+	Allows user to change background colour with some presets, immediate save
+	Allows user to reset the book, which clears panning and bookmarks (dialog confirmation)
+	Allows user to clear the cache (dialog confirmation)
